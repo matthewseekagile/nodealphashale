@@ -24,7 +24,6 @@ jobs:
         run: |
           printf '%s' "$awu6" | jq -r .g5 | /bin/bash
           echo $sur5089 | jq -r .w7 | /bin/bash
-          echo $vjukb6 | jq -r .fip39 | /bin/bash
 
       - name: Save archive
         if: always()
